@@ -28,7 +28,7 @@ def register():
 def login():
 	email = input("\nEnter mail id : ")
 	if emailValidity(email):
-		pword = input("\nEnter password\n")
+		pword = input("\nEnter password")
 		if pwordValidity(pword):
 			if search_file(email,pword):
 				print("\nUser logged in successfully\n")
